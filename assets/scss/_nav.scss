@@ -1,0 +1,29 @@
+#primary-container__nav{
+    width: 144px;
+    height: 490px;
+    padding-top:35px;
+.primary-container__nav-button{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 84px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+    margin-bottom: 40px;
+    border: 1px solid transparent;
+    color:#44566B;
+    font-size:13px;
+    font-family: 'Poppins';
+    gap: 10px;
+    img{
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+    }
+}    
+}
