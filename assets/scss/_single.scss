@@ -1,0 +1,88 @@
+#page{
+
+    .sites{
+        padding-top: 5em;
+        display: flex;
+        flex-direction: row;
+        gap: 10em;
+        .post-thumbnail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30em;
+            height: 40em;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .entry-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40em;
+            height: 40em;
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            color: #44566c;
+            text-align: center;
+            img{
+                margin:0 0 1.5em 0;
+            }
+            h2{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 28px;
+                font-weight: 500;
+                font-family: 'Poppins';
+                color: black;
+                margin-top: 0;
+                line-height: 1.5;
+                font-weight: 700;
+            }
+            p{
+                margin-bottom: 1.5em;
+            }
+        }
+        .entry-header, .entry-footer{
+            display: none;
+        }
+    }
+        .button {
+            width: 10em;
+            height: 3em;
+            position: relative;
+            margin:3em 18em;
+            text-decoration: none;
+            padding: 9px;
+            font-family: arial;
+            font-size: 1em;
+            color: #FFFFFF;
+            background-color: #1b74e4;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 0px solid #FFFFFF;
+            box-shadow: 2px 4px 12px #444444;
+            -webkit-box-shadow: 2px 4px 12px #444444;
+            -moz-box-shadow: 2px 4px 12px #444444;
+        }
+        
+        
+        .button:hover {
+            padding: 9px;
+            color: #1b74e4;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border: 2px solid #1b74e4;
+            box-shadow: 1px 1px 4px #777777;
+            -webkit-box-shadow: 1px 1px 4px #777777;
+            -moz-box-shadow: 1px 1px 4px #777777;
+            transition: 0.3s;
+        }
+}

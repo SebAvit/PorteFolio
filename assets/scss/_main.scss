@@ -10,6 +10,7 @@
         line-height: 1.5;
         font-weight: 700;
         margin-bottom: 15px;
+        margin-top: 5%;
     }
     p{
         font-family: 'Poppins';
@@ -50,5 +51,91 @@
                 margin: 10px;
             }
         }
+    }
+    #apropos {
+        display: block;
+    }
+    #projet {
+        display: none;
+    }
+    #contact {
+        display: none;
+    }
+    #formation {
+    display: none;
+    flex-direction: column;
+    .formation-div {
+        display: flex;
+        flex-direction: row;
+        .formation-div__title{
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Poppins';
+            color: black;
+            margin-top: 0;
+            margin-left: 5%;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        }
+    }
+    .projet-list__item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 15em;
+        background-color: var(--theme-primary);
+        .projet-link{
+            padding: 20% 5%;
+            background-color: #FFFFFF;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            img{
+            width: 18em;
+            height: 3em;
+            object-fit: contain;
+        }
+
+    }
+        .projet-list__button {
+            position: relative;
+            width: 40%;
+            margin:auto;
+            text-decoration: none;
+            padding: 9px;
+            font-family: arial;
+            font-size: 1em;
+            color: #FFFFFF;
+            background-color: #1b74e4;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 0px solid #FFFFFF;
+            box-shadow: 2px 4px 12px #444444;
+            -webkit-box-shadow: 2px 4px 12px #444444;
+            -moz-box-shadow: 2px 4px 12px #444444;
+            }
+                
+                
+        .projet-list__button:hover {
+            padding: 9px;
+            color: #1b74e4;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border: 2px solid #1b74e4;
+            box-shadow: 1px 1px 4px #777777;
+            -webkit-box-shadow: 1px 1px 4px #777777;
+            -moz-box-shadow: 1px 1px 4px #777777;
+            transition: 0.3s;
+            }
+    }
+    .projet-list__item:nth-child(2),.projet-list__item:nth-child(3),#education li, #experience li, .apropos-list__item{
+        background-color: var(--theme-secondary);
+    }
+    #education li:nth-child(3), #experience li:nth-child(2), #experience li:nth-child(4), .apropos-list__item:nth-child(1),.apropos-list__item:nth-child(4),.apropos-list__item:nth-child(5){
+        background-color: var(--theme-primary);
     }
 }

@@ -177,3 +177,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 require get_stylesheet_directory() . '/inc/site.php';
+
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+function theme_enqueue_styles() {
+    wp_enqueue_script('script', get_stylesheet_directory_uri() . '/assets/js/script.js', array(), '0.0.1', true);
+}
